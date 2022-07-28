@@ -1,0 +1,33 @@
+{
+  "name": "example",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite --port 9146",
+    "dev_vr": "vite --port 9146 --https --host 0.0.0.0",
+    "build": "tsc && vite build",
+    "serve": "vite preview",
+    "lint": "eslint -c .eslintrc.yml --ignore-pattern src/three-utils/*  --quiet --ext ts,tsx .",
+    "lint_fix": "eslint -c .eslintrc.yml --ignore-pattern src/three-utils/* --quiet --ext ts,tsx --fix ."
+  },
+  "devDependencies": {
+    "@types/offscreencanvas": "^2019.6.4",
+    "@types/react-dom": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.21.0",
+    "eslint": "^8.14.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "typescript": "^4.7",
+    "vite": "^3.0.3"
+  },
+  "dependencies": {
+    "@formant/universe": "latest",
+    "@formant/universe-connector": "latest",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  }
+}
